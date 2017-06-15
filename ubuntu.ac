@@ -1,0 +1,16 @@
+prefix="/usr/local"
+enable_mpi="yes"
+enable_mpi_io="yes"
+with_mpi_prefix="/usr"
+with_trio_flavor="netcdf+etsf_io"
+with_netcdf_incs="-I/usr/include"
+with_netcdf_libs="-L/usr/lib/x86_64-linux-gnu -lnetcdf -lnetcdff"
+with_fft_flavor="fftw3"
+with_fft_incs="-I/usr/include/"
+with_fft_libs="-L/usr/lib/x86-64-linux-gnu/ -lfftw3 -lfftw3f"
+with_linalg_flavor="atlas"
+with_linalg_libs="-L/usr/lib64 -llapack -lf77blas -lcblas -latlas"
+with_dft_flavor="atompaw+libxc+wannier90"
+FC=mpiif90
+
+~               
